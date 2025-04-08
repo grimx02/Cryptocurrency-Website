@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Website</title>
+    <link rel="stylesheet" href="styles contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <!-- Font Section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+    <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+            <i class="fa-solid fa-code"></i>
+            </i>  crypto</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+                <style>
+                    /* Add spacing between the icon and text */
+                    #navbar__logo i {
+                      margin-right: 15px; /* Adjust the value as needed */
+                    }
+                  
+                    /* Optional: Align the icon and text vertically */
+                    #navbar__logo {
+                      display: flex;
+                      align-items: center;
+                    }
+                  </style>
+                
+                <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links"> <!-- Home navbar -->
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="info.html" class="navbar__links">
+                        Info <!-- Info navbar -->
+                        </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links">
+                         Contact <!-- Contact navbar -->
+                        </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="SignUp.html" class="button">
+                        Sign Up <!-- Contact navbar -->
+                        </a>
+                    </li>
+                 </ul>
+            </div>
+         </nav>
+
+           <!-- Hero Section -->
+            <div class="main">
+                <div class="main__container">
+                    <div class="main__content">
+                        <h1>Contact</h1>
+                            <p></p>
+                            
+                            <!-- Modal (Internal CSS) Debugging it into external wont seem to work. -->
+                            <style>
+                            
+                            /* The Modal (background) */
+                            .modal {
+                                display: none; /* Hidden by default */
+                                position: fixed; /* Stay in place */
+                                z-index: 1; /* Sit on top */
+                                padding-top: 100px; /* Location of the box */
+                                left: 0;
+                                top: 0;
+                                width: 100%; /* Full width */
+                                height: 100%; /* Full height */
+                                overflow: auto; /* Enable scroll if needed */
+                                background-color: rgb(0,0,0); /* Fallback color */
+                                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                                animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+                            }
+
+                            /* Modal Content */
+                            .modal-content {
+                                background-color: #1d1d1d;
+                                margin: auto;
+                                padding: 20px;
+                                border-radius: 15px;
+                                border: 1px solid #444444;
+                                width: 80%;
+                                position: relative;
+                                animation: slideDown 0.5s ease-in-out; /* Slide-down animation */
+                            }
+
+                            .modal-content p {
+                                color: rgb(155, 58, 58) !important;
+                                margin-bottom: 20px;
+                            }
+
+                            .modal.animate-out {
+                            animation-name: fadeOut;
+                            }
+
+                            .modal.animate-out .modal-content {
+                            animation-name: slideOut;
+                            }
+
+                            /* Fade-in animation for the modal background */
+                            @keyframes fadeIn {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+
+                            /* Slide-down animation for the modal content */
+                            @keyframes slideDown {
+                                from {
+                                    transform: translateY(-50px);
+                                    opacity: 0;
+                                }
+                                to {
+                                    transform: translateY(0);
+                                    opacity: 1;
+                                }
+                            }
+
+                            @keyframes fadeOut {
+                            from {
+                                opacity: 1;
+                            } 
+                            
+                            to {
+                                opacity: 0;
+                                }
+                            }
+
+
+                            /* The Close Button */
+                            .close {
+                                color: #aaaaaa;
+                                float: right;
+                                font-size: 28px;
+                                font-weight: bold;
+                            }
+
+                            .close:hover,
+                            .close:focus {
+                                color: #000;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+
+                            /* The button css */
+                            #myBtn {
+                                font-size: 1rem;
+                                background-image: linear-gradient(to top, #ff0844 0%, #fe5196 100%);
+                                padding: 14px 32px;
+                                border: none;
+                                border-radius: 4px;
+                                color: #fff;
+                                cursor: pointer;
+                                margin-top: 1rem; /* Adds space between the paragraph and the button */
+                                position: relative;
+                                transition: all 0.3s ease;
+                                display: block; /* Ensures the button is on a new line */
+                                width: fit-content; /* Makes the button only as wide as its content */
+                                overflow: hidden;
+                                }
+
+                                #myBtn a {
+                                position: relative;
+                                z-index: 2;
+                                color: #fff;
+                                text-decoration: none;
+                                }
+
+                                #myBtn::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 0;
+                                height: 100%;
+                                background: #4837ff;
+                                transition: all 0.35s ease;
+                                border-radius: 4px;
+                                z-index: -1;
+                                }
+
+                                #myBtn:hover::after {
+                                width: 100%;
+                                }
+
+                                /* to tilt the button on hover */
+                                #myBtn:hover {
+                                transform: rotate(-3deg) scale(1.1);
+                                }
+                            
+                            </style>
+                            </head>
+                            <body>
+                    
+
+                            <!-- Trigger/Open The Modal -->
+                            <button id="myBtn">Details</button>
+                            
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                            
+                              <!-- Modal content -->
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Email: ia21179@campiocollege.school.nz</p>
+                              </div>
+                            
+                            </div>
+                            
+                            <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+                            
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+                            
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+                            
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+                            
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+
+                            
+
+                            </script>
+                            
+                            </body>
+                            </html>
+                            
+                     
+
+                    </div>
+                        
+                    </div>
+                </div>
+             </div>
+
+             
+            
+
+         <script src="app.js"></script>
+    </body>
+</html>
