@@ -71,7 +71,7 @@
                         <h1>Contact</h1>
                             <p></p>
                             
-                            <!-- Modal (Internal CSS) Debugging it into external wont seem to work. -->
+                            <!-- Modal (Internal CSS) Debugging it into external file wont seem to work. -->
                             <style>
                             
                             /* The Modal (background) */
@@ -83,8 +83,8 @@
                                 left: 0;
                                 top: 0;
                                 width: 100%; /* Full width */
-                                height: 100%; /* Full height */
-                                overflow: auto; /* Enable scroll if needed */
+                                height: 100%; /* full height */
+                                overflow: auto; /* enables scroll if needed */
                                 background-color: rgb(0,0,0); /* Fallback color */
                                 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
                                 animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
@@ -115,7 +115,7 @@
                             animation-name: slideOut;
                             }
 
-                            /* Fade-in animation for the modal background */
+                            /* Fade-in animation for the modal */
                             @keyframes fadeIn {
                                 from {
                                     opacity: 0;
@@ -125,7 +125,7 @@
                                 }
                             }
 
-                            /* Slide-down animation for the modal content */
+                            /* Slide-down animation for the modal */
                             @keyframes slideDown {
                                 from {
                                     transform: translateY(-50px);
@@ -148,7 +148,7 @@
                             }
 
 
-                            /* The Close Button */
+                            /* Close Button */
                             .close {
                                 color: #aaaaaa;
                                 float: right;
@@ -172,11 +172,11 @@
                                 border-radius: 4px;
                                 color: #fff;
                                 cursor: pointer;
-                                margin-top: 1rem; /* Adds space between the paragraph and the button */
+                                margin-top: 1rem; /*  space between the paragraph and the button */
                                 position: relative;
                                 transition: all 0.3s ease;
-                                display: block; /* Ensures the button is on a new line */
-                                width: fit-content; /* Makes the button only as wide as its content */
+                                display: block; /* ensure the button is on a new line */
+                                width: fit-content; /* makes the button only as wide as its content */
                                 overflow: hidden;
                                 }
 
@@ -229,13 +229,13 @@
                             </div>
                             
                             <script>
-                            // Get the modal
+                            // define the modal
                             var modal = document.getElementById("myModal");
                             
-                            // Get the button that opens the modal
+                            // define  the button that opens the modal
                             var btn = document.getElementById("myBtn");
                             
-                            // Get the <span> element that closes the modal
+                            // define  the <span> element that closes the modal
                             var span = document.getElementsByClassName("close")[0];
                             
                             // When the user clicks the button, open the modal 
@@ -243,7 +243,7 @@
                               modal.style.display = "block";
                             }
                             
-                            // When the user clicks on <span> (x), close the modal
+                            // when the user clicks on <span> (x), close the modal
                             span.onclick = function() {
                               modal.style.display = "none";
                             }
